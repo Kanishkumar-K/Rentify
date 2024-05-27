@@ -3,11 +3,13 @@ from rest_framework_simplejwt.views import TokenRefreshView
 from . import views
 from rest_framework.routers import DefaultRouter
 from .views import PropertyViewSet
+from . import views
 
 
 router = DefaultRouter()
 router.register(r'properties', PropertyViewSet)
 urlpatterns = [
+    path('', views.home, name='home'),  # Define a URL pattern for the home page
     path('token/', views.MyTokenObtainPairView.as_view(), name="token-obtain"),
     path('token/refresh/', TokenRefreshView.as_view(), name="refresh-token"),
     path('register/', views.RegisterView.as_view(), name="register-user"),
