@@ -30,7 +30,9 @@ SECRET_KEY = 'django-insecure-prl^b2ws47alar7&kmb_q-sdb-yct$k37-%mfevjbvi(&_+$x-
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
+# settings.py
+STATIC_ROOT = 'C:/Users/karun/OneDrive/Desktop/Rentify App/backend'
 
 # Application definition
 
@@ -102,16 +104,15 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 #     }
 # }
 
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rentify',
-        'USER': 'admin',
-        'PASSWORD': 'Kanish@123',
-        'HOST': 'localhost',  
-        'PORT': '3306',        
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),  # Path to SQLite database file
     }
 }
+
 
 
 # Password validation
