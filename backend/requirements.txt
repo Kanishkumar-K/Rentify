@@ -21,5 +21,4 @@ djangorestframework-simplejwt==5.3.1
 djoser==2.2.2
 entrypoints==0.4
 mysql-connector-python==8.0.32
-mysql-connector-python-rf==2.2.2
 mysqlclient==2.2.4
