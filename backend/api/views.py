@@ -10,7 +10,11 @@ from rest_framework import status
 from rest_framework import viewsets
 from .models import Property
 from .serializers import PropertySerializer
+from django.http import HttpResponse
 
+def home(request):
+    return HttpResponse("Welcome to the home page!")  # Example content
+    
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTOPS
 
