@@ -1,0 +1,90 @@
+.navbar-container {
+    background-color: #171717;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-right: 18px;
+  }
+  
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .user-section {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  .welcome-message {
+    margin-right: 10px;
+  }
+  
+  .menu-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .dropdown-menu {
+    background-color: #171717;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-list {
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+  }
+  
+  .dropdown-item {
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .logout-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .signup-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  

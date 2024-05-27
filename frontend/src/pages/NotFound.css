@@ -1,0 +1,74 @@
+.not-found-container {
+    position: relative;
+    height: 99.5vh;
+    width: 99.9vw;
+    overflow: hidden;
+    background-color: #f0f0f0; /* Set background color */
+  }
+  
+  .road {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 99.9%;
+    height: 98px; /* Adjust as needed */
+    background: url('img/roadtext.jpg') repeat-x; /* Replace path_to_your_road_texture_image with your image */
+    animation: move-road 10s linear infinite;
+  }
+  
+  @keyframes move-road {
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  
+  .clouds {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%; /* Double the width for seamless looping */
+    height: 85%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), url('img/cloud.jpg') repeat-x; /* Use linear gradient to fade edges */
+    animation: move-clouds 20s linear infinite;
+  }
+  
+  @keyframes move-clouds {
+    100% {
+      transform: translateX(-50%); /* Move by 50% of the width to reveal the next instance */
+    }
+  }
+  
+  
+  .vehicle {
+    position: absolute;
+    top: 63%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 200px;
+    width: 400px;
+  }
+  
+  .content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .switch-button {
+    background-color: #333; /* Initial darker color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .switch-button:hover {
+    background-color: #ffcc00; /* Bright color on hover */
+    color: black;
+  }
+  
