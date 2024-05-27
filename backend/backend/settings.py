@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-prl^b2ws47alar7&kmb_q-sdb-yct$k37-%mfevjbvi(&_+$x-
 # SECURITY WARNING: don't run with debug turned on in production!
 
 DEBUG = True
-ALLOWED_HOSTS = ['rentify-oq6a.onrender.com']
+ALLOWED_HOSTS = ['https://rentify-1-u90g.onrender.com']
 # settings.py
 STATIC_ROOT = 'C:/Users/karun/OneDrive/Desktop/Rentify App/backend'
 
